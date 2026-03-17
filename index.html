@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Save the Highlanders | Protect Our Hilltowns</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        .hero-bg { background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://picsum.photos/id/1015/1920/1080'); background-size: cover; }
+        .card-hover { transition: all 0.3s; }
+        .card-hover:hover { transform: translateY(-10px); box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1); }
+        .gallery-img { transition: all 0.3s; }
+        .gallery-img:hover { transform: scale(1.05); }
+    </style>
+</head>
+<body class="bg-stone-50 text-stone-800 font-sans">
+    <!-- NAV -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold text-emerald-700">Save the Highlanders</div>
+            <div class="hidden md:flex gap-8 text-lg">
+                <a href="#about" class="hover:text-emerald-600">Our Mission</a>
+                <a href="#gallery" class="hover:text-emerald-600">Gallery</a>
+                <a href="#news" class="hover:text-emerald-600">In the News</a>
+                <a href="#videos" class="hover:text-emerald-600">Videos</a>
+                <a href="#events" class="hover:text-emerald-600">Events & Tickets</a>
+                <a href="#donate" class="hover:text-emerald-600">Donate</a>
+                <a href="#contact" class="hover:text-emerald-600">Contact</a>
+            </div>
+            <button onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})" 
+                    class="bg-emerald-700 text-white px-6 py-2 rounded-full font-semibold hover:bg-emerald-800">
+                Take Action
+            </button>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero-bg h-screen flex items-center text-white">
+        <div class="max-w-4xl mx-auto text-center px-6">
+            <h1 class="text-5xl md:text-7xl font-bold leading-tight mb-6">Protect the Highlanders</h1>
+            <p class="text-2xl mb-8">Western Massachusetts Hilltowns are under threat from dangerous solar farms and battery storage systems. We’re fighting for our land, water, and communities.</p>
+            <div class="flex gap-4 justify-center flex-wrap">
+                <a href="#donate" class="bg-white text-emerald-700 px-10 py-4 rounded-full text-xl font-semibold hover:bg-emerald-100">Donate Now</a>
+                <a href="#contact" class="border-2 border-white px-10 py-4 rounded-full text-xl font-semibold hover:bg-white/10">Join the Fight</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-12">Our Mission</h2>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <p class="text-xl leading-relaxed">Led by local resident Helen Sharron Pollard, we are a growing coalition of over 400 Hilltown residents fighting aggressive, high-risk solar and battery projects. We oppose industrial-scale installations that threaten our rural character, water supplies, and safety.</p>
+                    <p class="mt-6 text-xl">"People think if it’s clean energy, it must be low risk. Nothing could be further from the truth. This is a disaster waiting to happen." — Helen Sharron Pollard</p>
+                </div>
+                <div class="grid grid-cols-2 gap-6">
+                    <div class="bg-stone-100 p-8 rounded-2xl card-hover">
+                        <i class="fa-solid fa-fire text-4xl text-red-600 mb-4"></i>
+                        <h3 class="font-bold text-xl">Battery Fire Risks</h3>
+                        <p class="mt-2">Thermal runaway fires release toxic chemicals — too dangerous for volunteer fire departments.</p>
+                    </div>
+                    <div class="bg-stone-100 p-8 rounded-2xl card-hover">
+                        <i class="fa-solid fa-tree text-4xl text-emerald-600 mb-4"></i>
+                        <h3 class="font-bold text-xl">Land & Wildlife</h3>
+                        <p class="mt-2">Thousands of acres of prime farmland and habitat destroyed.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section id="gallery" class="py-20 bg-stone-100">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-12">Our Hilltowns Under Threat</h2>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4" id="gallery-grid">
+                <!-- Images populated by JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- NEWS -->
+    <section id="news" class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-12">Featured in the Boston Globe</h2>
+            <div class="bg-emerald-50 p-10 rounded-3xl text-center">
+                <img src="https://picsum.photos/id/201/800/400" alt="Boston Globe Cover" class="mx-auto rounded-xl shadow-xl mb-8">
+                <h3 class="text-2xl font-bold">"In Western Mass., environmentalists fear that solar farms are fire hazards"</h3>
+                <p class="mt-4 text-lg">March 1, 2026 — Helen Sharron Pollard and 400+ residents push back against 6,000+ panel projects and battery storage systems.</p>
+                <a href="https://www.bostonglobe.com/2026/03/01/science/hilltowns-solar-proposal-battery-fire/" 
+                   target="_blank" class="inline-block mt-6 bg-emerald-700 text-white px-8 py-3 rounded-full font-semibold">Read the Full Story →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- VIDEOS -->
+    <section id="videos" class="py-20 bg-stone-100">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-12">Videos & Media</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="aspect-video bg-black rounded-3xl overflow-hidden">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/PLACEHOLDER_ID1" title="YouTube video" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="aspect-video bg-black rounded-3xl overflow-hidden">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/PLACEHOLDER_ID2" title="YouTube video" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+            <p class="text-center mt-8 text-lg">Replace the YouTube IDs with your actual videos or published clips.</p>
+        </div>
+    </section>
+
+    <!-- EVENTS & TICKETS -->
+    <section id="events" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-12">Upcoming Events — Buy Tickets</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Example event cards - replace dates & links -->
+                <div class="bg-stone-50 p-8 rounded-3xl card-hover">
+                    <h3 class="font-bold text-2xl">Town Hall Meeting</h3>
+                    <p class="text-emerald-600 mt-2">April 5, 2026 • Worthington Golf Club</p>
+                    <a href="https://www.eventbrite.com/YOUR_EVENT_LINK" target="_blank" 
+                       class="block mt-6 bg-emerald-700 text-white text-center py-4 rounded-2xl font-semibold">Buy Tickets →</a>
+                </div>
+                <!-- Add more cards as needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- DONATE -->
+    <section id="donate" class="py-20 bg-emerald-800 text-white">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h2 class="text-4xl font-bold mb-6">Support the Fight</h2>
+            <p class="text-2xl mb-12">Every donation helps us organize, educate, and protect our Highlanders.</p>
+            <div class="grid md:grid-cols-3 gap-6">
+                <a href="https://www.paypal.com/donate/?hosted_button_id=YOUR_PAYPAL_ID" target="_blank" 
+                   class="bg-white text-emerald-800 p-8 rounded-3xl card-hover">
+                    <p class="text-5xl font-bold">$25</p>
+                    <p class="mt-2">One-time gift</p>
+                </a>
+                <a href="https://www.paypal.com/donate/?hosted_button_id=YOUR_PAYPAL_ID" target="_blank" 
+                   class="bg-white text-emerald-800 p-8 rounded-3xl card-hover">
+                    <p class="text-5xl font-bold">$50/mo</p>
+                    <p class="mt-2">Monthly protector</p>
+                </a>
+                <a href="https://www.paypal.com/donate/?hosted_button_id=YOUR_PAYPAL_ID" target="_blank" 
+                   class="bg-white text-emerald-800 p-8 rounded-3xl card-hover">
+                    <p class="text-5xl font-bold">$250</p>
+                    <p class="mt-2">Sponsor level</p>
+                </a>
+            </div>
+            <p class="mt-10 text-lg">Or set up a free Donorbox/Stripe account and I’ll update the buttons instantly.</p>
+        </div>
+    </section>
+
+    <!-- CONTACT FORM -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="max-w-2xl mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-12">Get in Touch</h2>
+            <form action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST" class="space-y-6">
+                <input type="text" name="name" placeholder="Your Name" required class="w-full p-4 border rounded-2xl">
+                <input type="email" name="email" placeholder="Your Email" required class="w-full p-4 border rounded-2xl">
+                <textarea name="message" rows="6" placeholder="Your message..." required class="w-full p-4 border rounded-2xl"></textarea>
+                <button type="submit" class="w-full bg-emerald-700 text-white py-5 rounded-2xl text-xl font-semibold">Send Message →</button>
+            </form>
+            <p class="text-center mt-6 text-sm">We’ll reply within 24 hours. You can also reply directly from your inbox.</p>
+        </div>
+    </section>
+
+    <footer class="bg-stone-900 text-white py-12 text-center">
+        <p>© 2026 Save the Highlanders • Protecting Western MA Hilltowns</p>
+        <p class="mt-2">Your GoDaddy domain here</p>
+    </footer>
+
+    <!-- Gallery Lightbox JS -->
+    <script>
+        // Tailwind script already loaded
+        function initTailwind() { /* auto */ }
+        // Simple gallery
+        const images = [1015, 1016, 160, 201, 251, 29, 318, 1018];
+        const grid = document.getElementById('gallery-grid');
+        images.forEach(id => {
+            const div = document.createElement('div');
+            div.innerHTML = `<img src="https://picsum.photos/id/${id}/600/400" class="gallery-img w-full h-64 object-cover rounded-2xl cursor-pointer" onclick="showLightbox(this.src)">`;
+            grid.appendChild(div);
+        });
+        function showLightbox(src) {
+            const modal = document.createElement('div');
+            modal.className = 'fixed inset-0 bg-black/90 flex items-center justify-center z-[999]';
+            modal.innerHTML = `<img src="${src}" class="max-w-[90%] max-h-[90%] rounded-3xl" onclick="this.parentElement.remove()">`;
+            document.body.appendChild(modal);
+        }
+    </script>
+</body>
+</html>
